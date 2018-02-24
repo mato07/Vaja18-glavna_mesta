@@ -1,3 +1,39 @@
-body {
-    background-color: red;
+.container {
+    background-image: url("../slike/ozadje.jpeg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center-text {
+  text-align: center;
+}
+
+body, html {
+    height: 100%;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+.center-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }

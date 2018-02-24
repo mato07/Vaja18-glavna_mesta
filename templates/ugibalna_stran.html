@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block vsebina %}
+    {% if rezultat %}
+    <h1 class="center-text">Pravilno!!! Glavno mesto drzave: {{ enota.drzava }} je {{ enota.gl_mesto }}</h1>
+    {% else %}
+    <h1 class="center-text">Napacen odgovor!!! Glavno mesto drzave: {{ enota.drzava }} je {{ enota.gl_mesto }}</h1>
+    {% endif %}
+    <p class="center-text"><a href="/">Poskusi znova</a></p>
+
+{% endblock vsebina %}

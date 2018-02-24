@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block vsebina %}
+    <h1 class="center-text">Ugani glavno mesto drzave: {{mestece.drzava}}</h1>
+    <img src="{{mestece.slika}}" alt="#" class="center-image" width="300px">
+
+    <form method="POST" action="/ugibaj">
+        <label for="input-mesto" class="center-input">Vnesi glavno mesto: </label>
+        <input type="text" id="input-mesto" name="mesto" class="center-input">
+        <input type="hidden" value="{{ mestece.drzava }}" name="preveri">
+        <br>
+        <button type="submit" class="center-button">Ugibaj</button>
+    </form>
+{% endblock vsebina %}
+
